@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:UIVisualEffect/UIVisualEffect.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ShareExtensionDemo/ShareExtension&#x7eaf;&#x6587;&#x5b57;/ShareExtensionDemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TodayExtensionExample/TodayExtension-Code/TodayExtension-Code.xcodeproj">
+   </FileRef>
+</Workspace>
