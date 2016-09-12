@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A424EA951D86CB02005B2F9F /* ExtraLightController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424EA931D86CB02005B2F9F /* ExtraLightController.m */; };
+		A424EA981D86CB0F005B2F9F /* DarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424EA971D86CB0F005B2F9F /* DarkController.m */; };
+		A424EA9B1D86CB17005B2F9F /* LightController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424EA9A1D86CB17005B2F9F /* LightController.m */; };
 		A4C8B4D11D7C81A000100DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C8B4D01D7C81A000100DB6 /* main.m */; };
 		A4C8B4D41D7C81A000100DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C8B4D31D7C81A000100DB6 /* AppDelegate.m */; };
 		A4C8B4D71D7C81A000100DB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C8B4D61D7C81A000100DB6 /* ViewController.m */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A424EA921D86CB02005B2F9F /* ExtraLightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraLightController.h; sourceTree = "<group>"; };
+		A424EA931D86CB02005B2F9F /* ExtraLightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraLightController.m; sourceTree = "<group>"; };
+		A424EA961D86CB0F005B2F9F /* DarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkController.h; sourceTree = "<group>"; };
+		A424EA971D86CB0F005B2F9F /* DarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkController.m; sourceTree = "<group>"; };
+		A424EA991D86CB17005B2F9F /* LightController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightController.h; sourceTree = "<group>"; };
+		A424EA9A1D86CB17005B2F9F /* LightController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightController.m; sourceTree = "<group>"; };
 		A4C8B4CC1D7C81A000100DB6 /* UIVisualEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIVisualEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4C8B4D01D7C81A000100DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4C8B4D21D7C81A000100DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +87,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A424EA8C1D86CAB9005B2F9F /* UIVisualEffectController */ = {
+			isa = PBXGroup;
+			children = (
+				A424EA901D86CB02005B2F9F /* DarkController */,
+				A424EA911D86CB02005B2F9F /* ExtraLightController */,
+				A424EA941D86CB02005B2F9F /* LightController */,
+			);
+			path = UIVisualEffectController;
+			sourceTree = "<group>";
+		};
+		A424EA901D86CB02005B2F9F /* DarkController */ = {
+			isa = PBXGroup;
+			children = (
+				A424EA961D86CB0F005B2F9F /* DarkController.h */,
+				A424EA971D86CB0F005B2F9F /* DarkController.m */,
+			);
+			path = DarkController;
+			sourceTree = "<group>";
+		};
+		A424EA911D86CB02005B2F9F /* ExtraLightController */ = {
+			isa = PBXGroup;
+			children = (
+				A424EA921D86CB02005B2F9F /* ExtraLightController.h */,
+				A424EA931D86CB02005B2F9F /* ExtraLightController.m */,
+			);
+			path = ExtraLightController;
+			sourceTree = "<group>";
+		};
+		A424EA941D86CB02005B2F9F /* LightController */ = {
+			isa = PBXGroup;
+			children = (
+				A424EA991D86CB17005B2F9F /* LightController.h */,
+				A424EA9A1D86CB17005B2F9F /* LightController.m */,
+			);
+			path = LightController;
+			sourceTree = "<group>";
+		};
 		A4C8B4C31D7C81A000100DB6 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +147,7 @@
 		A4C8B4CE1D7C81A000100DB6 /* UIVisualEffect */ = {
 			isa = PBXGroup;
 			children = (
+				A424EA8C1D86CAB9005B2F9F /* UIVisualEffectController */,
 				A4C8B4D21D7C81A000100DB6 /* AppDelegate.h */,
 				A4C8B4D31D7C81A000100DB6 /* AppDelegate.m */,
 				A4C8B4D51D7C81A000100DB6 /* ViewController.h */,
@@ -271,8 +318,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4C8B4D71D7C81A000100DB6 /* ViewController.m in Sources */,
+				A424EA981D86CB0F005B2F9F /* DarkController.m in Sources */,
 				A4C8B4D41D7C81A000100DB6 /* AppDelegate.m in Sources */,
 				A4C8B4D11D7C81A000100DB6 /* main.m in Sources */,
+				A424EA9B1D86CB17005B2F9F /* LightController.m in Sources */,
+				A424EA951D86CB02005B2F9F /* ExtraLightController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +548,7 @@
 				A4C8B4FB1D7C81A000100DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C8B4FC1D7C81A000100DB6 /* Build configuration list for PBXNativeTarget "UIVisualEffectTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +557,7 @@
 				A4C8B4FE1D7C81A000100DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4C8B4FF1D7C81A000100DB6 /* Build configuration list for PBXNativeTarget "UIVisualEffectUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +566,7 @@
 				A4C8B5011D7C81A000100DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

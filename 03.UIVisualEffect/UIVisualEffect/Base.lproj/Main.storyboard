@@ -1,25 +1,171 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VzL-oI-ass">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPG-Ph-G9R">
+                                <rect key="frame" x="142" y="269" width="35" height="30"/>
+                                <state key="normal" title="Light"/>
+                                <connections>
+                                    <segue destination="8SY-0u-QXs" kind="show" id="G3N-tn-IpK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94K-db-ZB7">
+                                <rect key="frame" x="143" y="329" width="33" height="30"/>
+                                <state key="normal" title="Dark"/>
+                                <connections>
+                                    <segue destination="dMg-aG-dIZ" kind="show" id="LtM-AV-Uzu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oca-nf-1G3">
+                                <rect key="frame" x="125" y="209" width="70" height="30"/>
+                                <state key="normal" title="ExtraLight"/>
+                                <connections>
+                                    <segue destination="G4A-Tw-ppq" kind="show" id="Pdj-iY-1NI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Oca-nf-1G3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KBB-Vp-kGQ"/>
+                            <constraint firstItem="94K-db-ZB7" firstAttribute="top" secondItem="vPG-Ph-G9R" secondAttribute="bottom" constant="30" id="Vqv-05-BS0"/>
+                            <constraint firstItem="vPG-Ph-G9R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WgL-hb-dF1"/>
+                            <constraint firstItem="vPG-Ph-G9R" firstAttribute="top" secondItem="Oca-nf-1G3" secondAttribute="bottom" constant="30" id="WnK-kv-rLv"/>
+                            <constraint firstItem="vPG-Ph-G9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dqs-D8-gfB"/>
+                            <constraint firstItem="94K-db-ZB7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRM-k8-mBb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IEa-Kv-K8s"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669" y="377"/>
+        </scene>
+        <!--Light Controller-->
+        <scene sceneID="eie-RL-Pk9">
+            <objects>
+                <viewController id="8SY-0u-QXs" customClass="LightController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xtc-sH-oAV"/>
+                        <viewControllerLayoutGuide type="bottom" id="FZb-pd-ANi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cuW-0P-D9y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Headphones" translatesAutoresizingMaskIntoConstraints="NO" id="GBS-LU-ePf">
+                                <rect key="frame" x="53" y="176" width="215" height="215"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GBS-LU-ePf" firstAttribute="centerY" secondItem="cuW-0P-D9y" secondAttribute="centerY" id="h0f-Ap-b4F"/>
+                            <constraint firstItem="GBS-LU-ePf" firstAttribute="centerX" secondItem="cuW-0P-D9y" secondAttribute="centerX" id="y6b-KR-31c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="GBS-LU-ePf" id="sS6-oS-btr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CjS-NY-t8S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="1124"/>
+        </scene>
+        <!--Dark Controller-->
+        <scene sceneID="Wuo-MW-WHX">
+            <objects>
+                <viewController id="dMg-aG-dIZ" customClass="DarkController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBV-ue-B1m"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZSg-VJ-EBK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FjN-9U-esG">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Headphones" translatesAutoresizingMaskIntoConstraints="NO" id="96g-Fa-Zhf">
+                                <rect key="frame" x="52.5" y="176.5" width="215" height="215"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="96g-Fa-Zhf" firstAttribute="centerX" secondItem="FjN-9U-esG" secondAttribute="centerX" id="0aA-uz-SDf"/>
+                            <constraint firstItem="96g-Fa-Zhf" firstAttribute="centerY" secondItem="FjN-9U-esG" secondAttribute="centerY" id="WgB-wc-Qew"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="96g-Fa-Zhf" id="xWf-Zj-gT1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7i1-zJ-K7u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="1124"/>
+        </scene>
+        <!--Extra Light Controller-->
+        <scene sceneID="WS3-Fx-cUk">
+            <objects>
+                <viewController id="G4A-Tw-ppq" customClass="ExtraLightController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bvY-I8-aqr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bvv-gE-K09"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fl8-Bn-w95">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Headphones" translatesAutoresizingMaskIntoConstraints="NO" id="OsS-Gl-Dlz">
+                                <rect key="frame" x="53" y="176" width="215" height="215"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OsS-Gl-Dlz" firstAttribute="centerY" secondItem="Fl8-Bn-w95" secondAttribute="centerY" id="ATH-41-KVd"/>
+                            <constraint firstItem="OsS-Gl-Dlz" firstAttribute="centerX" secondItem="Fl8-Bn-w95" secondAttribute="centerX" id="zc6-gB-Wfr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="OsS-Gl-Dlz" id="ZZE-F7-PrL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Rq-F3-HXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="226" y="1124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VqB-ym-Hkx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VzL-oI-ass" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VwG-bl-A2a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uw9-JY-NmZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Epf-87-eUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="-326"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Headphones" width="215" height="215"/>
+    </resources>
 </document>
